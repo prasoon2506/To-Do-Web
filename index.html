@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List Web App</h1>
+    
+    <!-- Task Form -->
+    <div class="task-form">
+      <input type="text" id="taskTitle" placeholder="Title" required>
+      <textarea id="taskDescription" placeholder="Description" required></textarea>
+      <button type="submit" id="saveTask">Save</button>
+    </div>
+
+    <!-- Task Lists -->
+    <div class="task-lists">
+      <div class="task-list pending-tasks">
+        <h2>Pending Tasks</h2>
+        <ul id="pendingTasksList"></ul>
+      </div>
+      <div class="task-list completed-tasks">
+        <h2>Completed Tasks</h2>
+        <ul id="completedTasksList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
